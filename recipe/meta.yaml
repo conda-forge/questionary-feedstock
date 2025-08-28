@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - poetry >=1.0.5
   run:
     - python >={{ python_min }}
-    - prompt_toolkit >=2.0,<4.0
+    - prompt-toolkit >=2.0,<4.0
 
 test:
   imports:
